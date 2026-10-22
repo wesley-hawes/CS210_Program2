@@ -53,8 +53,9 @@ int main(){
             //give new request
             webarray[currTime % NUM_SERVERS].addRequest(lb.getRequest(), currTime);
         }
-            //every rabdom set of time or get a new request
             if (rand() %10 == 0){
+        
+            //every rabdom set
                 request r = (createRandomRequest());
                 lb.addRequest(r);
             }
